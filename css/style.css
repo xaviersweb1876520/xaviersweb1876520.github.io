@@ -1,0 +1,21 @@
+.backgroundimg{
+  background-image: url("http://cdn.mos.techradar.com/art/magazines/Linux/Issue%20156/LXF156.feat_minecraft.me-970-80.jpg")
+}
+
+.fadein {  
+color: darkred;
+animation:JAMES 3s infinite;
+}
+
+@keyframes JAMES{
+  0%{
+color: greenyellow;
+}
+  50%{
+    color: red;  }
+  100%{
+    color: white;
+    
+  }
+  
+}
