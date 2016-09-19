@@ -1716,6 +1716,10 @@
 			letter-spacing: 0.04em;
 		}
 
+		#banner img {
+			width:100%;
+		}
+
 /* Wrappers */
 
 	#header-wrapper {
@@ -2081,6 +2085,7 @@
 
 			.image.left {
 				width: 25%;
+				width: 100%;
 				margin-bottom: 2em !important;
 			}
 
