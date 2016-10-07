@@ -1,38 +1,56 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 /*
-	ZeroFour by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	.button {
-		background-image: url('images/ie/grad0-20.svg');
+	body {
+		background-image:		url('../../images/bg.jpg');
+		background-repeat:		no-repeat;
+		background-size:		cover;
+		background-position:	bottom center;
+		background-attachment:	fixed;
+
+		&:after {
+			display: none;
+		}
 	}
 
-	.box-feature1 header.second {
-		left: 0;
+/* List */
+
+	ul {
+		&.icons {
+			li {
+				a {
+					&:before {
+						color: _palette(border);
+					}
+
+					&:hover {
+						&:before {
+							color: _palette(highlight);
+						}
+					}
+				}
+			}
+		}
 	}
 
-/* Wrappers	*/
+/* Wrapper */
 
-	#footer-wrapper,
-	#header .inner {
-		background-image: url('images/ie/grad0-35.svg');
+	#wrapper {
+		text-align: center;
 	}
 
-/* Nav */
+/* Main */
 
-	.dropotron {
-		background-image: url('images/ie/grad35-0.svg');
-	}
-
-/* Mobile UI */
-
-	#titleBar, #navPanel {
-		background-image: url('images/ie/grad0-35.svg');
+	#main {
+		display: inline-block;
 	}
